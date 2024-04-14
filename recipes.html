@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the reset file -->
+    <link rel="stylesheet" href="css/html5reset.css">
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> 
+    <title>Recipes</title>
+</head>
+
+<body>
+    <a href="#main-content">Skip to Main Content</a>
+    <nav data-aos="zoom-in-up" data-aos-once="false" data-aos-mirror="true">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pets.html">Pets</a></li>
+            <li><a href="recipes.html" class="active">Recipes</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>    
+    <main id="main-content">
+        <div>
+            <h1>Recipes!</h1>
+            <button id="theme-switcher">Switch Theme</button>
+        <script>
+            const themeSwitcher = document.getElementById('theme-switcher');
+    
+            function toggleTheme() {
+                const isDarkTheme = document.body.classList.toggle('dark-theme');
+                localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+            }
+    
+            themeSwitcher.addEventListener('click', toggleTheme);
+    
+            document.addEventListener('DOMContentLoaded', () => {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                    document.body.classList.add('dark-theme');
+                }
+            });
+        </script>
+            <h2>Fettuccine Alfredo</h2>
+            <img src="https://plantbasedonabudget.com/wp-content/uploads/2020/10/Fettuccine-Alfredo-Plant-Based-on-a-Budget-1-2-500x375.jpg"
+                class="main-picture" alt="Fettuccine Alfredo dish">
+            <p>This classic Italian pasta dish includes fettuccine tossed with butter and Parmesan cheese, and it's
+                quick and easy to make. U.S. versions of the dish may include chicken or shrimp.</p>
+            <h3>Ingredients</h3>
+            <ul class="list-center">
+                <li>Fettuccine pasta</li>
+                <li>Freshly grated Parmesan cheese</li>
+                <li>Butter</li>
+                <li>Salt and pepper to taste</li>
+                <li>(Optional) Grilled chicken or shrimp</li>
+            </ul>
+            <h3>Instructions</h3>
+            <p>Cook the fettuccine according to package instructions. In a separate pan, melt the butter and add the
+                cooked pasta. Toss with Parmesan cheese until the pasta is coated. Season with salt and pepper. Serve
+                hot.</p>
+
+            <h3>Gallery</h3>
+            <div class="main-grid">
+                <img src="https://challengedairy.com/wp-content/uploads/recipe_fettuccine_alfredo_2280.jpg" width="350"
+                    class="img1" alt="Creamy fetuccine ready to be eaten.">
+                <img src="https://www.rockrecipes.com/wp-content/uploads/2016/09/Fettucine-Alfredo-Close-up-.jpg"
+                    class="img2" width="350" alt="Another picture of fettucine. Does your mouth water yet?">
+                <img src="https://www.recipetineats.com/wp-content/uploads/2015/06/Alfredo-Fettuccine_680px_action.jpg"
+                    class="img4" width="250" alt="Yet another picture of fettucine. Hungry?">
+                <img src="https://www.spendwithpennies.com/wp-content/uploads/2021/09/Fettuccine-Alfredo-Recipe-SpendWithPennies-2-480x270.jpg"
+                    class="img3" width="300" alt="Finito, mamma mia">
+            </div>
+        </div>
+
+        <div>
+            <h2>Chimichurri</h2>
+            <img src="https://cdn.loveandlemons.com/wp-content/uploads/2022/03/chimichurri.jpg" alt="Chimichurri sauce"
+                class="main-picture" width="480">
+            <p>Chimichurri is a sauce used for grilled meat, originally from Argentina. It's made from parsley, garlic,
+                oil, oregano, and white vinegar.</p>
+            <h3>Ingredients</h3>
+            <ul class="list-center">
+                <li>1 cup fresh flat-leaf parsley</li>
+                <li>4 cloves of garlic</li>
+                <li>2 tablespoons fresh oregano leaves</li>
+                <li>1/2 cup olive oil</li>
+                <li>2 tablespoons white wine vinegar</li>
+                <li>Salt and pepper to taste</li>
+                <li>Red pepper flakes (optional)</li>
+            </ul>
+            <h3>Instructions</h3>
+            <p>Finely chop the parsley, garlic, and oregano. Combine in a bowl with olive oil, vinegar, salt, pepper,
+                and red pepper flakes if using. Let it sit for at least 20 minutes to allow the flavors to meld.</p>
+
+            <h3>Gallery</h3>
+            <div class="main-grid">
+                <img src="https://www.joyfulhealthyeats.com/wp-content/uploads/2013/04/The-Most-Flavorful-Skirt-Steak-with-Chimichurri-Sauce-web-11.jpg"
+                    class="img1" width="350" alt="Best enjoyed with some nice steak">
+                <img src="https://evergreenkitchen.ca/wp-content/uploads/2023/09/Red-Chimichurri-Sauce-Evergreen-Kitchen-1.jpg"
+                    class="img2" width="350" alt="There are many alternative ways chimmi can be made.">
+                <img src="https://www.recipetineats.com/wp-content/uploads/2016/08/Steak-with-Chimichurri-Sauce_1.jpg"
+                    class="img3" width="300" alt="I'm getting hungry just making this.">
+                <img src="https://www.730sagestreet.com/wp-content/uploads/2021/12/chimichurri-recipe-featured.jpg"
+                    class="img4" width="350"
+                    alt="Chimichurri has a very leafy complexion, making the texture unlovable for some.">
+            </div>
+        </div>
+
+        <div>
+            <h2>French Omelette</h2>
+            <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/d1cb1ef69a1c4b6c9a10e1662082f0e7/BFV77395_HowToCookAPerfectOmelet_ADB_032221_V06l_16x9_YT.jpg"
+                class="main-picture" alt="French Omelette" width="500">
+            <p>A French omelette is a classic and versatile breakfast dish. Unlike a denser American omelette, it's
+                cooked very quickly in a super-hot pan and often rolled or folded to encase a filling.</p>
+            <h3>Ingredients</h3>
+            <ul class="list-center">
+                <li>3 eggs</li>
+                <li>1 tablespoon unsalted butter</li>
+                <li>Salt and pepper to taste</li>
+                <li>Chopped fresh herbs (optional)</li>
+                <li>Cheese (optional)</li>
+            </ul>
+            <h3>Instructions</h3>
+            <p>Beat the eggs with salt, pepper, and herbs if using. Heat butter in a non-stick skillet over medium-high
+                heat. Pour in the eggs and cook for a few seconds, until the bottom starts to set. Using a spatula,
+                gently fold the omelette in half or roll it. Serve immediately.</p>
+
+            <h3>Gallery</h3>
+            <div class="main-grid">
+                <img src="https://www.seriouseats.com/thmb/xXRPcwsIxOrskKcj_7KZAHkSWlg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2016__04__20160323-french-omelet-vicky-wasik--31-d2675fbb85364278b3fb8cd092c81882.jpg"
+                    class="img1" width="350" alt="Nice and cheesy... mmmm">
+                <img src="https://www.wellplated.com/wp-content/uploads/2023/04/Best-French-Omelette.jpg" width="350"
+                    class="img2" alt="Can be made with veggies as well.">
+                <img src="https://i.ytimg.com/vi/IpcIoQQCHg4/maxresdefault.jpg" width="300" class="img3"
+                    alt="I'm getting hungry just making this.">
+                <img src="https://www.ediblecommunities.com/wp-content/uploads/2020/07/french-flower-omelette.jpg"
+                    class="img4" width="350" alt="French omelettes are absolute deliciousness.">
+            </div>
+        </div>
+
+        <div>
+            <h2>Classic Margherita Pizza</h2>
+            <img src="https://static.toiimg.com/thumb/56868564.cms?imgsize=1948751&width=800&height=800"
+                class="main-picture" alt="Classic Margherita Pizza" width="550">
+            <p>A simple yet classic pizza, topped with fresh tomatoes, mozzarella cheese, fresh basil, salt, and
+                extra-virgin olive oil.</p>
+            <h3>Ingredients</h3>
+            <ul class="list-center">
+                <li>Pizza dough (homemade or store-bought)</li>
+                <li>2-3 ripe tomatoes, thinly sliced</li>
+                <li>200g fresh mozzarella cheese, sliced</li>
+                <li>Fresh basil leaves</li>
+                <li>Extra-virgin olive oil</li>
+                <li>Salt</li>
+            </ul>
+            <h3>Instructions</h3>
+            <p>Preheat your oven to the highest setting. Roll out the pizza dough and place it on a baking tray. Arrange
+                the tomato slices and mozzarella cheese on top. Drizzle with olive oil and a pinch of salt. Bake for
+                10-15 minutes until the crust is golden and cheese is bubbly. Garnish with fresh basil leaves before
+                serving.</p>
+
+            <h3>Gallery</h3>
+            <div class="main-grid">
+                <img src="https://images.ctfassets.net/nw5k25xfqsik/64VwvKFqxMWQORE10Tn8pY/200c0538099dc4d1cf62fd07ce59c2af/20220211142754-margherita-9920.jpg"
+                    class="img1" width="300" alt="You can switch up the amount of tomato on the pizza.">
+                <img src="https://www.kimscravings.com/wp-content/uploads/2020/01/Margherita-Pizza-5.jpg" height="300"
+                    class="img2"
+                    alt="Italians like to have actual tomato and less sauce, which is always a good and tasty option too.">
+                <img src="https://www.thursdaynightpizza.com/wp-content/uploads/2020/05/overhead-finished-2_stamp-500x375.png"
+                    class="img3" width="300" alt="Melted mozzarella is simply the best, no further things to be said.">
+                <img src="https://res.cloudinary.com/hksqkdlah/image/upload/5110_ja06-pizzamargherita-article.jpg"
+                    class="img4" width="300" alt="This slice is just waiting to be eaten...">
+            </div>
+        </div>
+
+        <div>
+            <h2>Gnocchi Quattro Formaggi</h2>
+            <img src="https://www.seriouseats.com/thmb/KxUeYzrfir0UuvFgghJgcDxPGVE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2021__02__20210201-gnocchi-alla-bava-fontina-cheese-sauce-daniel-gritzer-5-b4272214bc2d4a2798f138a8f362e053.jpg"
+                class="main-picture" alt="Gnocchi Quattro Formaggi" width="500">
+            <p>This dish features soft gnocchi pasta covered in a creamy four-cheese blend, offering a rich and
+                indulgent flavor.</p>
+            <h3>Ingredients</h3>
+            <ul class="list-center">
+                <li>500g potato gnocchi</li>
+                <li>50g Parmesan cheese, grated</li>
+                <li>50g Gorgonzola cheese, crumbled</li>
+                <li>50g Fontina cheese, cubed</li>
+                <li>50g Mozzarella cheese, shredded</li>
+                <li>1 cup heavy cream</li>
+                <li>2 tbsp unsalted butter</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+            <h3>Instructions</h3>
+            <p>In a pot, bring salted water to a boil and cook gnocchi according to package instructions. In a separate
+                pan, melt butter over medium heat, add heavy cream and all the cheeses. Stir until the cheeses melt and
+                the sauce becomes creamy. Season with salt and pepper. Drain the gnocchi and add them to the sauce,
+                gently tossing to coat. Serve immediately.</p>
+
+            <h3>Gallery</h3>
+            <div class="main-grid">
+                <img src="https://i0.wp.com/lessbuttermoreoil.com/wp-content/uploads/2021/02/Gnocchi-ai-4-formaggi-08.jpg?fit=768%2C1024&ssl=1"
+                    class="img4" width="300" alt="Raw gnocchi before being boiled in the water.">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/18/7c/10/7f/gnocchi-ai-4-formaggi.jpg"
+                    class="img2" width="350"
+                    alt="different kinds of garnish can be applied, making this a very versatile dish.">
+                <img src="https://static.vecteezy.com/system/resources/previews/027/489/518/non_2x/italian-gnocchi-ai-quatro-formaggi-with-pizza-bread-on-the-side-served-on-a-table-photo.jpg"
+                    class="img3" width="400" alt="Mamma mia this plate of gnocchi looks absolutely delicious.">
+                <img src="https://recipesjourney.com/wp-content/uploads/2019/05/gnocchi-ai-formaggi.webp" width="400"
+                    class="img1"
+                    alt="Although the Italians may not be super happy with this, adding meat or truffles to the top is a great idea to add a bit more flavor.">
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

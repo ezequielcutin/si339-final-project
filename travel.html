@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the reset file -->
+    <link rel="stylesheet" href="css/html5reset.css">
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <title>Travel</title>
+</head>
+
+<body>
+    <a href="#main-content">Skip to Main Content</a>
+    <nav data-aos="fade-up">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pets.html">Pets</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="travel.html" class="active">Travel</a></li>
+        </ul>
+    </nav>    
+    <main id="main-content">
+        <h1>Travel Locations</h1>
+        <button id="theme-switcher">Switch Theme</button>
+
+        <script>
+            const themeSwitcher = document.getElementById('theme-switcher');
+
+            function toggleTheme() {
+                const isDarkTheme = document.body.classList.toggle('dark-theme');
+                localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+            }
+
+            themeSwitcher.addEventListener('click', toggleTheme);
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                    document.body.classList.add('dark-theme');
+                }
+            });
+        </script>
+        <div>
+            <h2>Yellowstone National Park</h2>
+            <img src="images/yellowstone_sunset.jpg" class="main-picture" alt="Yellowstone Sunset" width="200">
+            <p>Yellowstone National Park, famed for its geothermal wonders and rich wildlife, is a paradise for nature
+                lovers. From the majestic Old Faithful geyser to the stunning Yellowstone Grand Canyon, the park offers
+                breathtaking landscapes and a diverse ecosystem that's home to bison, bears, and wolves.</p>
+            <h3>Gallery</h3>
+            <div class="main-grid">
+                <img src="https://cdn.outsideonline.com/wp-content/uploads/2019/10/23/geyser-yelowstone-burst_h.jpg"
+                    width="850" class="img1" alt="Steam blowing out the geyser in Yellowstone National Park">
+                <img src="https://assets.goaaa.com/image/upload/w_auto,q_auto:best,f_auto/v1647563984/singularity-migrated-images/yellowstone-national-park-bison-herd-madison-river-valley-yellowstone-facts-via-magazine-shutterstock_666046720.jpg.jpg"
+                    class="img2" width="700" alt="Bison like to roam around in Yellowstone National Park.">
+                <img src="https://www.viaggi-usa.it/wp-content/uploads/2019/02/pecore-bighorn-yellowstone.jpg"
+                    class="img3" width="300"
+                    alt="You can go on multiple safari adventures at Yellowstone in order to see the vast beauty of the wild animals.">
+                <img src="https://geckodesigns-wpelargefs.s3.amazonaws.com/yellowforever/wp-content/uploads/2019/05/YF_ParkEntranceSign_2012_ToddKlassy-2.jpg"
+                    class="img4" width="500" alt="Sign welcoming visitors to Yellowstone National Park">
+            </div>
+        </div>
+
+        <div>
+            <h2>Miami Beach</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Miamibeach.jpg/800px-Miamibeach.jpg"
+                class="main-picture" alt="Scenic View of Miami Beach">
+            <p>Miami Beach is a vibrant Florida city known for its beautiful sandy beaches, lively nightlife, and
+                colorful art deco architecture. It's a perfect blend of culture, entertainment, and natural beauty,
+                making it a must-visit destination for beach lovers and party-goers alike.</p>
+            <h3>Gallery</h3>
+            <div class="main-grid">
+                <img src="https://media.hswstatic.com/eyJidWNrZXQiOiJjb250ZW50Lmhzd3N0YXRpYy5jb20iLCJrZXkiOiJnaWZcL3MxXC9tcV90cmF2ZWxcL2dldHR5aW1hZ2VzLTEyMDQwNDM4NDUtc2NhbGVkLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6ODI4fX19"
+                    class="img1" width="450" alt="Miami beach is home to many bright and electric colors.">
+                <img src="https://images.seattletimes.com/wp-content/uploads/2023/07/urnpublicidap.org98aa9ae4763f64f844909e3dc5f26fc8Miami_Beach_Water_Woes_01306.jpg?d=780x556"
+                    class="img2" width="400"
+                    alt="There are always huge crowds of tourists in Miami beach, so be mindful of when you are going to avoid them!">
+                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/miami-beach-bike-path-jeff-gale.jpg"
+                    class="img3" width="450"
+                    alt="There are very beautiful boardwalks to walk on or bike right next to the beach">
+                <img src="https://res.cloudinary.com/traveltripperweb/image/upload/c_fit,f_auto,h_1200,q_auto,w_1200/v1640638905/se7ar8lyhx0k8mdtnmqa.jpg"
+                    class="img4" width="400"
+                    alt="There are multiple delicious food options in Miami Beach. One of the most famous ones is called Big Pink, and it is a two block walk from the water.">
+            </div>
+        </div>
+
+        <div>
+            <h2>Tokyo</h2>
+            <img src="https://media.cntraveler.com/photos/63482b255e7943ad4006df0b/16:9/w_2560%2Cc_limit/tokyoGettyImages-1031467664.jpeg"
+                alt="Tokyo Cityscape" width="900" class="main-picture">
+            <p>Tokyo, Japan's bustling capital, offers a unique mix of the traditional and the modern. From the historic
+                temples and the serene Imperial Palace to the cutting-edge technology and fashion districts like Shibuya
+                and Harajuku, Tokyo provides an exhilarating and diverse experience for every traveler.</p>
+            <h3>Gallery</h3>
+            <div class="main-grid">
+                <img src="https://c8.alamy.com/comp/FBK6EJ/the-birds-eye-view-of-a-part-of-tokyo-mega-city-from-tokyo-sky-tree-FBK6EJ.jpg"
+                    width="500" class="img1"
+                    alt="Tokyo is one of the biggest cities in the world, with the city spanning for as far as the eye can see.">
+                <img src="https://i0.wp.com/jetsettingfools.com/wp-content/uploads/2018/11/Senso-ji-Temple-and-Pagoda-at-night-Tokyo-Japan.jpg?resize=1024%2C683&ssl=1"
+                    width="400" class="img2"
+                    alt="There are many beautiful temples that can be seen in Tokyo. Almost too many.">
+                <img src="https://www.datocms-assets.com/101439/1703169212-tokyo-food.jpg?auto=format&fit=crop&h=800&w=1200"
+                    width="400" class="img3"
+                    alt="From street food to delicious restaurants, Tokyo has got your food needs covered.">
+                <img src="https://media.timeout.com/images/105326943/750/422/image.jpg" width="450" class="img4"
+                    alt="With so many bright lights, the city becomes alive at night, supplying a cyberpunk-ey vibe to the people living there.">
+            </div>
+        </div>
+    </main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="js/scripts.js"></script>
+
+</html>

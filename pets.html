@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the reset file -->
+    <link rel="stylesheet" href="css/html5reset.css">
+    <!-- Link to the stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"> 
+    <title>Pets</title>
+</head>
+
+<body>
+    <a href="#main-content">Skip to Main Content</a>
+    <nav data-aos="flip-right">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pets.html" class="active">Pets</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>    
+    <main id="main-content">
+        <h1>Pets</h1>
+        <button id="theme-switcher">Switch Theme</button>
+
+        <script>
+            const themeSwitcher = document.getElementById('theme-switcher');
+
+            function toggleTheme() {
+                const isDarkTheme = document.body.classList.toggle('dark-theme');
+                localStorage.setItem('theme', isDarkTheme ? 'dark' : 'light');
+            }
+
+            themeSwitcher.addEventListener('click', toggleTheme);
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const savedTheme = localStorage.getItem('theme');
+                if (savedTheme === 'dark') {
+                    document.body.classList.add('dark-theme');
+                }
+            });
+        </script>
+        <div>
+            <h2>Bacon Q Dog</h2>
+
+
+            <img src="images/bacon.jpg" class="main-picture" width="400" alt="Brown labradoodle wearing colorful lei">
+
+            <p>Bacon Q. Dog is a 9yr old labradoodle. He prefers to spend his days lounging among the three different
+                beds/couches that his family has gifted him. He enjoys a walk or two around the neighborhood, as long as
+                he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to
+                admit he has no wolf-like skills in chasing them.</p>
+            <p>At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his
+                energy. He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a
+                ride." There is also a lot of rolling. Lots and lots of rolling.</p>
+            <h3>Photo Gallery</h3>
+            <div class="main-grid">
+                <img src="images/bacon_bandana.JPG" class="img1" width="200"
+                    alt="Brown labradoodle wearing an orange bandana">
+                <img src="images/bacon_graduation.JPG" class="img2" width="200"
+                    alt="Small labradoodle puppy wearing a graduation cap and gown">
+                <video class="img4" width="200" controls>
+                    <source src="images/bacon_agility.mov">
+                    Your browser does not support the video tag. This was a video of a girl and dog demonstrating a sit
+                    and
+                    stay procedure
+                </video>
+                <img src="images/bacon_halloween.JPG" class="img3" width="200"
+                    alt="Brown labradoodle wearing a pirate costume">
+            </div>
+            <h3>Likes</h3>
+            <ul class="list-center">
+                <li>Belly rubs</li>
+                <li>Playing tug-of-war</li>
+                <li>Sneaking onto the couch</li>
+            </ul>
+        </div>
+        <!-- Jackie Wolf -->
+
+        <div>
+            <h2>Charlie the Corgi</h2>
+            <img src="https://www.shutterstock.com/image-photo/cute-welsh-corgi-pembroke-running-600nw-2272199211.jpg"
+                class="main-picture" width="350" alt="Charlie The Corgi is a cutie.">
+            <p>Charlie is a playful 3-year-old Pembroke Welsh Corgi known for his short stature and boundless
+                energy. He loves playing fetch in the park and is surprisingly fast for his small legs. Charlie
+                enjoys being around people and is very friendly with children.</p>
+
+            <h3>Photo Gallery</h3>
+            <div class="main-grid">
+                <img src="https://cdn-prd.content.metamorphosis.com/wp-content/uploads/sites/6/2021/08/Screen-Shot-2021-02-26-at-3.23.25-PM-807x1024-1.png"
+                    class="img1" width="200" alt="Charlie The Corgi is very funny.">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXE1Xw8OdD6t-nBlKJM__rK3-6X1OrYsYwA&usqp=CAU"
+                    class="img2" width="300" alt="Charlie as a lil baby">
+
+                <img src="https://cdn.pixabay.com/photo/2018/05/11/08/11/pets-3389723_640.jpg" width="300" class="img4"
+                    alt="This is a google image, not Charlie.">
+
+                <img src="https://media-be.chewy.com/wp-content/uploads/2018/05/leonard-corgi-butts-x-473-586x.jpg"
+                    class="img3" width="250" alt="Chonky doggo.">
+            </div>
+            <h3>Likes</h3>
+            <ul class="list-center">
+                <li>Fetching balls</li>
+                <li>Playing with kids</li>
+                <li>Long walks in the park</li>
+            </ul>
+        </div>
+
+
+        <div>
+            <h2>Bella the Beagle</h2>
+            <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783" class="main-picture" width="400"
+                alt="Bella lying on grass">
+            <p>Bella is a gentle 5-year-old Beagle with a keen sense of smell. She's a curious explorer and loves
+                sniffing out new trails during her walks. Bella is very affectionate and enjoys cuddling up next to
+                her family members at the end of the day.</p>
+
+            <h3>Photo Gallery</h3>
+            <div class="main-grid">
+                <img src="https://images.unsplash.com/photo-1606833695155-e3498374e701?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJlYWdsZXxlbnwwfHwwfHx8MA%3D%3D"
+                    class="img1" width="300" alt="Shleepy dog.">
+
+                <img src="https://assets-global.website-files.com/5fa59dd29ad1b41ab669a8e4/636bd8ef3dacbc4a2d8fc9b7_image2.jpg"
+                    class="img2" width="250" alt="Bella's first bath!">
+
+                <img src="https://brooklynpetspa.com/wp-content/uploads/2023/04/beagle-dog-groomers-scaled-e1638591923936.jpg"
+                    class="img4" width="150" alt="Bella is staring into your soul.">
+
+                <img src="https://www.shutterstock.com/image-photo/small-beagle-puppy-beautiful-three-600nw-2181770485.jpg"
+                    class="img3" width="400" alt="Bella and mom.">
+            </div>
+            <h3>Likes</h3>
+            <ul class="list-center">
+                <li>Trail walks</li>
+                <li>Sniffing out interesting scents</li>
+                <li>Cuddling</li>
+            </ul>
+        </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
