@@ -6,3 +6,14 @@ document.addEventListener("DOMContentLoaded", function() {
         mirror: true // Whether elements should animate out while scrolling past them
     });
 });
+
+
+
+function toggleVisibility(elementId) {
+    var content = document.getElementById(elementId);
+    if (content.style.display === 'none') {
+        content.style.display = 'block';
+    } else {
+        content.style.display = 'none';
+    }
+}
