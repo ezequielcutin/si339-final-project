@@ -8,12 +8,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-
-function toggleVisibility(elementId) {
+function toggleVisibility(elementId, button) {
     var content = document.getElementById(elementId);
     if (content.style.display === 'none') {
-        content.style.display = 'block';
+        content.style.display = 'block'; // Show the content
+        button.textContent = 'Hide ' + button.textContent.split(' ')[1]; // Change button text to "Hide"
     } else {
-        content.style.display = 'none';
+        content.style.display = 'none'; // Hide the content
+        button.textContent = 'Show ' + button.textContent.split(' ')[1]; // Change button text to "Show"
     }
 }

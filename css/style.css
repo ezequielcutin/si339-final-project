@@ -292,3 +292,19 @@ nav[data-aos="fade-up"].aos-animate {
     background-color: #fff;
     border: 1px solid #eee;
 }
+
+
+.toggle-button {
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.content {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #eee;
+}
