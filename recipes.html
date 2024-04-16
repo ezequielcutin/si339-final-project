@@ -48,8 +48,7 @@
                 class="main-picture" alt="Fettuccine Alfredo dish">
             <p>This classic Italian pasta dish includes fettuccine tossed with butter and Parmesan cheese, and it's
                 quick and easy to make. U.S. versions of the dish may include chicken or shrimp.</p>
-            <button class="toggle-button" onclick="toggleVisibility('ingredients-fettuccine',this)">Hide
-                Ingredients</button>
+            <button class="toggle-button" onclick="toggleVisibility('ingredients-fettuccine',this)">Hide Ingredients</button>
             <div id="ingredients-fettuccine" class="content">
                 <h3>Ingredients</h3>
                 <ul class="list-center">
@@ -60,8 +59,7 @@
                     <li>(Optional) Grilled chicken or shrimp</li>
                 </ul>
             </div>
-            <button class="toggle-button" onclick="toggleVisibility('instructions-fettuccine',this)">Hide
-                Instructions</button>
+            <button class="toggle-button" onclick="toggleVisibility('instructions-fettuccine',this)">Hide Instructions</button>
             <div id="instructions-fettuccine" class="content">
                 <h3>Instructions</h3>
                 <p>Cook the fettuccine according to package instructions. In a separate pan, melt the butter and add the
@@ -91,8 +89,7 @@
                 class="main-picture" width="480">
             <p>Chimichurri is a sauce used for grilled meat, originally from Argentina. It's made from parsley, garlic,
                 oil, oregano, and white vinegar.</p>
-            <button class="toggle-button" onclick="toggleVisibility('ingredients-chimichurri', this)">Hide
-                Ingredients</button>
+            <button class="toggle-button" onclick="toggleVisibility('ingredients-chimichurri', this)">Hide Ingredients</button>
             <div id="ingredients-chimichurri" class="content">
                 <h3>Ingredients</h3>
                 <ul class="list-center">
@@ -106,8 +103,7 @@
                 </ul>
             </div>
 
-            <button class="toggle-button" onclick="toggleVisibility('instructions-chimichurri', this)">Hide
-                Instructions</button>
+            <button class="toggle-button" onclick="toggleVisibility('instructions-chimichurri', this)">Hide Instructions</button>
             <div id="instructions-chimichurri" class="content">
                 <h3>Instructions</h3>
                 <p>Finely chop the parsley, garlic, and oregano. Combine in a bowl with olive oil, vinegar, salt,
@@ -183,34 +179,45 @@
                     class="main-picture" alt="Classic Margherita Pizza" width="550">
                 <p>A simple yet classic pizza, topped with fresh tomatoes, mozzarella cheese, fresh basil, salt, and
                     extra-virgin olive oil.</p>
-                <h3>Ingredients</h3>
-                <ul class="list-center">
-                    <li>Pizza dough (homemade or store-bought)</li>
-                    <li>2-3 ripe tomatoes, thinly sliced</li>
-                    <li>200g fresh mozzarella cheese, sliced</li>
-                    <li>Fresh basil leaves</li>
-                    <li>Extra-virgin olive oil</li>
-                    <li>Salt</li>
-                </ul>
-                <h3>Instructions</h3>
-                <p>Preheat your oven to the highest setting. Roll out the pizza dough and place it on a baking tray.
-                    Arrange
-                    the tomato slices and mozzarella cheese on top. Drizzle with olive oil and a pinch of salt. Bake for
-                    10-15 minutes until the crust is golden and cheese is bubbly. Garnish with fresh basil leaves before
-                    serving.</p>
+                <button class="toggle-button" onclick="toggleVisibility('ingredients-margherita', this)">Hide Ingredients</button>
+                <div id="ingredients-margherita" class="content">
+                    <h3>Ingredients</h3>
+                    <ul class="list-center">
+                        <li>Pizza dough (homemade or store-bought)</li>
+                        <li>2-3 ripe tomatoes, thinly sliced</li>
+                        <li>200g fresh mozzarella cheese, sliced</li>
+                        <li>Fresh basil leaves</li>
+                        <li>Extra-virgin olive oil</li>
+                        <li>Salt</li>
+                    </ul>
+                </div>
+                <button class="toggle-button" onclick="toggleVisibility('instructions-margherita', this)">Hide Instructions</button>
+                <div id="instructions-margherita" class="content">
+                    <h3>Instructions</h3>
+                    <p>Preheat your oven to the highest setting. Roll out the pizza dough and place it on a baking tray.
+                        Arrange
+                        the tomato slices and mozzarella cheese on top. Drizzle with olive oil and a pinch of salt. Bake
+                        for
+                        10-15 minutes until the crust is golden and cheese is bubbly. Garnish with fresh basil leaves
+                        before
+                        serving.</p>
+                </div>
 
-                <h3>Gallery</h3>
-                <div class="main-grid">
-                    <img src="https://images.ctfassets.net/nw5k25xfqsik/64VwvKFqxMWQORE10Tn8pY/200c0538099dc4d1cf62fd07ce59c2af/20220211142754-margherita-9920.jpg"
-                        class="img1" width="300" alt="You can switch up the amount of tomato on the pizza.">
-                    <img src="https://www.kimscravings.com/wp-content/uploads/2020/01/Margherita-Pizza-5.jpg"
-                        height="300" class="img2"
-                        alt="Italians like to have actual tomato and less sauce, which is always a good and tasty option too.">
-                    <img src="https://www.thursdaynightpizza.com/wp-content/uploads/2020/05/overhead-finished-2_stamp-500x375.png"
-                        class="img3" width="300"
-                        alt="Melted mozzarella is simply the best, no further things to be said.">
-                    <img src="https://res.cloudinary.com/hksqkdlah/image/upload/5110_ja06-pizzamargherita-article.jpg"
-                        class="img4" width="300" alt="This slice is just waiting to be eaten...">
+                <button class="toggle-button" onclick="toggleVisibility('gallery-margherita', this)">Hide Gallery</button>
+                <div id="gallery-margherita" class="content">
+                    <h3>Gallery</h3>
+                    <div class="main-grid">
+                        <img src="https://images.ctfassets.net/nw5k25xfqsik/64VwvKFqxMWQORE10Tn8pY/200c0538099dc4d1cf62fd07ce59c2af/20220211142754-margherita-9920.jpg"
+                            class="img1" width="300" alt="You can switch up the amount of tomato on the pizza.">
+                        <img src="https://www.kimscravings.com/wp-content/uploads/2020/01/Margherita-Pizza-5.jpg"
+                            height="300" class="img2"
+                            alt="Italians like to have actual tomato and less sauce, which is always a good and tasty option too.">
+                        <img src="https://www.thursdaynightpizza.com/wp-content/uploads/2020/05/overhead-finished-2_stamp-500x375.png"
+                            class="img3" width="300"
+                            alt="Melted mozzarella is simply the best, no further things to be said.">
+                        <img src="https://res.cloudinary.com/hksqkdlah/image/upload/5110_ja06-pizzamargherita-article.jpg"
+                            class="img4" width="300" alt="This slice is just waiting to be eaten...">
+                    </div>
                 </div>
             </div>
 
@@ -218,41 +225,52 @@
                 <h2>Gnocchi Quattro Formaggi</h2>
                 <img src="https://www.seriouseats.com/thmb/KxUeYzrfir0UuvFgghJgcDxPGVE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2021__02__20210201-gnocchi-alla-bava-fontina-cheese-sauce-daniel-gritzer-5-b4272214bc2d4a2798f138a8f362e053.jpg"
                     class="main-picture" alt="Gnocchi Quattro Formaggi" width="500">
-                <p>This dish features soft gnocchi pasta covered in a creamy four-cheese blend, offering a rich and
-                    indulgent flavor.</p>
-                <h3>Ingredients</h3>
-                <ul class="list-center">
-                    <li>500g potato gnocchi</li>
-                    <li>50g Parmesan cheese, grated</li>
-                    <li>50g Gorgonzola cheese, crumbled</li>
-                    <li>50g Fontina cheese, cubed</li>
-                    <li>50g Mozzarella cheese, shredded</li>
-                    <li>1 cup heavy cream</li>
-                    <li>2 tbsp unsalted butter</li>
-                    <li>Salt and pepper to taste</li>
-                </ul>
-                <h3>Instructions</h3>
-                <p>In a pot, bring salted water to a boil and cook gnocchi according to package instructions. In a
-                    separate
-                    pan, melt butter over medium heat, add heavy cream and all the cheeses. Stir until the cheeses melt
-                    and
-                    the sauce becomes creamy. Season with salt and pepper. Drain the gnocchi and add them to the sauce,
-                    gently tossing to coat. Serve immediately.</p>
-
-                <h3>Gallery</h3>
-                <div class="main-grid">
-                    <img src="https://i0.wp.com/lessbuttermoreoil.com/wp-content/uploads/2021/02/Gnocchi-ai-4-formaggi-08.jpg?fit=768%2C1024&ssl=1"
-                        class="img4" width="300" alt="Raw gnocchi before being boiled in the water.">
-                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/18/7c/10/7f/gnocchi-ai-4-formaggi.jpg"
-                        class="img2" width="350"
-                        alt="different kinds of garnish can be applied, making this a very versatile dish.">
-                    <img src="https://static.vecteezy.com/system/resources/previews/027/489/518/non_2x/italian-gnocchi-ai-quatro-formaggi-with-pizza-bread-on-the-side-served-on-a-table-photo.jpg"
-                        class="img3" width="400" alt="Mamma mia this plate of gnocchi looks absolutely delicious.">
-                    <img src="https://recipesjourney.com/wp-content/uploads/2019/05/gnocchi-ai-formaggi.webp"
-                        width="400" class="img1"
-                        alt="Although the Italians may not be super happy with this, adding meat or truffles to the top is a great idea to add a bit more flavor.">
+                <p>This dish features soft gnocchi pasta covered in a creamy four-cheese blend, offering a rich and indulgent flavor.</p>
+            
+                <!-- Ingredients -->
+                <button class="toggle-button" onclick="toggleVisibility('ingredients-gnocchi', this)">Hide Ingredients</button>
+                <div id="ingredients-gnocchi" class="content">
+                    <h3>Ingredients</h3>
+                    <ul class="list-center">
+                        <li>500g potato gnocchi</li>
+                        <li>50g Parmesan cheese, grated</li>
+                        <li>50g Gorgonzola cheese, crumbled</li>
+                        <li>50g Fontina cheese, cubed</li>
+                        <li>50g Mozzarella cheese, shredded</li>
+                        <li>1 cup heavy cream</li>
+                        <li>2 tbsp unsalted butter</li>
+                        <li>Salt and pepper to taste</li>
+                    </ul>
                 </div>
-            </div>
+            
+                <!-- Instructions -->
+                <button class="toggle-button" onclick="toggleVisibility('instructions-gnocchi', this)">Hide Instructions</button>
+                <div id="instructions-gnocchi" class="content">
+                    <h3>Instructions</h3>
+                    <p>In a pot, bring salted water to a boil and cook gnocchi according to package instructions. In a separate
+                        pan, melt butter over medium heat, add heavy cream and all the cheeses. Stir until the cheeses melt
+                        and the sauce becomes creamy. Season with salt and pepper. Drain the gnocchi and add them to the sauce,
+                        gently tossing to coat. Serve immediately.</p>
+                </div>
+            
+                <!-- Gallery -->
+                <button class="toggle-button" onclick="toggleVisibility('gallery-gnocchi', this)">Hide Gallery</button>
+                <div id="gallery-gnocchi" class="content">
+                    <h3>Gallery</h3>
+                    <div class="main-grid">
+                        <img src="https://i0.wp.com/lessbuttermoreoil.com/wp-content/uploads/2021/02/Gnocchi-ai-4-formaggi-08.jpg?fit=768%2C1024&ssl=1"
+                            class="img1" width="300" alt="Raw gnocchi before being boiled in the water.">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/18/7c/10/7f/gnocchi-ai-4-formaggi.jpg"
+                            class="img2" width="350"
+                            alt="Different kinds of garnish can be applied, making this a very versatile dish.">
+                        <img src="https://static.vecteezy.com/system/resources/previews/027/489/518/non_2x/italian-gnocchi-ai-quatro-formaggi-with-pizza-bread-on-the-side-served-on-a-table-photo.jpg"
+                            class="img3" width="400" alt="Mamma mia this plate of gnocchi looks absolutely delicious.">
+                        <img src="https://recipesjourney.com/wp-content/uploads/2019/05/gnocchi-ai-formaggi.webp"
+                            class="img4" width="400"
+                            alt="Although the Italians may not be super happy with this, adding meat or truffles to the top is a great idea to add a bit more flavor.">
+                    </div>
+                </div>
+            </div>            
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
