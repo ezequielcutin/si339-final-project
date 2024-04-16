@@ -308,3 +308,16 @@ nav[data-aos="fade-up"].aos-animate {
     background-color: #fff;
     border: 1px solid #eee;
 }
+
+.map-instructions {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 60px; /* Adjust this value to fit under your navbar */
+    color: #333; /* Or any color that fits your design */
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+    margin-top: 20px; /* Additional margin to push the map down */
+}

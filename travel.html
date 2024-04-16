@@ -9,6 +9,8 @@
     <!-- Link to the stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <title>Travel</title>
 </head>
 
@@ -24,6 +26,10 @@
     </nav>
     
     <main id="main-content">
+
+        <p class="map-instructions">Click on the favorite countries/cities you've visited!</p>
+
+        <div id="map" style = "height:400px;"></div>
         <h1>Travel Locations</h1>
         <button id="theme-switcher">Switch Theme</button>
 
@@ -110,6 +116,7 @@
             </div>
         </div>
     </main>
+    <script src = "js/map.js"></script>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
