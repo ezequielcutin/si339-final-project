@@ -18,3 +18,18 @@ function toggleVisibility(elementId, button) {
         button.textContent = 'Show ' + button.textContent.split(' ')[1]; // Change button text to "Show"
     }
 }
+
+
+// Saving the checked state to local storage
+document.querySelectorAll('.list-center input[type="checkbox"]').forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+      localStorage.setItem(this.id, this.checked);
+    });
+  });
+  
+  // Loading the saved checked states when the page loads
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.list-center input[type="checkbox"]').forEach(function(checkbox) {
+      checkbox.checked = localStorage.getItem(checkbox.id) === 'true';
+    });
+  });

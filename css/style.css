@@ -321,3 +321,18 @@ nav[data-aos="fade-up"].aos-animate {
     width: 100%;
     margin-top: 20px; /* Additional margin to push the map down */
 }
+
+
+/* Custom checkbox styles */
+input[type="checkbox"] {
+    /* Example: increase size of checkbox */
+    transform: scale(1.2);
+    margin-right: 5px;
+  }
+  
+  /* Styling for list item when the ingredient is checked */
+  input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #6c757d; /* Example: grey out the text */
+  }
+  

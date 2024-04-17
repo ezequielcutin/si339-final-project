@@ -52,11 +52,26 @@
             <div id="ingredients-fettuccine" class="content">
                 <h3>Ingredients</h3>
                 <ul class="list-center">
-                    <li>Fettuccine pasta</li>
-                    <li>Freshly grated Parmesan cheese</li>
-                    <li>Butter</li>
-                    <li>Salt and pepper to taste</li>
-                    <li>(Optional) Grilled chicken or shrimp</li>
+                    <li>
+                        <input type="checkbox" id="fettuccine-pasta" name="fettuccine-pasta">
+                        <label for="fettuccine-pasta">Fettuccine pasta</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="parm-cheese" name="parm-cheese">
+                        <label for="parm-cheese">Freshly grated Parmesan cheese</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="butter" name="butter">
+                        <label for="butter">Butter</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="salt-and-pep" name="salt-and-pep">
+                        <label for="salt-and-pep">Salt and pepper to taste</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="grilled-chicken" name="grilled-chicken">
+                        <label for="grilled-chicken">(Optional) Grilled chicken or shrimp</label>
+                    </li>
                 </ul>
             </div>
             <button class="toggle-button" onclick="toggleVisibility('instructions-fettuccine',this)">Hide Instructions</button>
@@ -93,13 +108,34 @@
             <div id="ingredients-chimichurri" class="content">
                 <h3>Ingredients</h3>
                 <ul class="list-center">
-                    <li>1 cup fresh flat-leaf parsley</li>
-                    <li>4 cloves of garlic</li>
-                    <li>2 tablespoons fresh oregano leaves</li>
-                    <li>1/2 cup olive oil</li>
-                    <li>2 tablespoons white wine vinegar</li>
-                    <li>Salt and pepper to taste</li>
-                    <li>Red pepper flakes (optional)</li>
+                    <li>
+                        <input type="checkbox" id="parsley" name="parsley">
+                        <label for="parsley">1 cup fresh flat-leaf parsley</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="garlic" name="garlic">
+                        <label for="garlic">4 cloves of garlic</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="oregano" name="oregano">
+                        <label for="oregano">2 tablespoons fresh oregano leaves</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="oliveoil" name="oliveoil">
+                        <label for="oliveoil">1/2 cup olive oil</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="vinegar" name="vinegar">
+                        <label for="vinegar">2 tablespoons white wine vinegar</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="saltpep" name="saltpep">
+                        <label for="saltpep">Salt and pepper to taste</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="redpep" name="redpep">
+                        <label for="redpep">Red pepper flakes (optional)</label>
+                    </li>
                 </ul>
             </div>
 
@@ -138,11 +174,26 @@
                 <div id="ingredients-french-omelette" class="content">
                     <h3>Ingredients</h3>
                     <ul class="list-center">
-                        <li>3 eggs</li>
-                        <li>1 tablespoon unsalted butter</li>
-                        <li>Salt and pepper to taste</li>
-                        <li>Chopped fresh herbs (optional)</li>
-                        <li>Cheese (optional)</li>
+                        <li>
+                            <input type="checkbox" id="eggs" name="eggs">
+                            <label for="eggs">3 eggs</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="unsaltbutter" name="unsaltbutter">
+                            <label for="unsaltbutter">1 tablespoon unsalted butter</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="omelettesaltpep" name="omelettesaltpep">
+                            <label for="omelettesaltpep">Salt and pepper to taste</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="fresh-herbs" name="fresh-herbs">
+                            <label for="fresh-herbs">Chopped fresh herbs (optional)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="cheese" name="cheese">
+                            <label for="cheese">Cheese (optional)</label>
+                        </li>
                     </ul>
                 </div>
 
@@ -183,12 +234,30 @@
                 <div id="ingredients-margherita" class="content">
                     <h3>Ingredients</h3>
                     <ul class="list-center">
-                        <li>Pizza dough (homemade or store-bought)</li>
-                        <li>2-3 ripe tomatoes, thinly sliced</li>
-                        <li>200g fresh mozzarella cheese, sliced</li>
-                        <li>Fresh basil leaves</li>
-                        <li>Extra-virgin olive oil</li>
-                        <li>Salt</li>
+                        <li>
+                            <input type="checkbox" id="dough" name="dough">
+                            <label for="dough">Pizza dough (homemade or store-bought)</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="ripetomatos" name="ripetomatos">
+                            <label for="ripetomatos">2-3 ripe tomatoes, thinly sliced</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="mozzarellacheese" name="mozzarellacheese">
+                            <label for="mozzarellacheese">200g fresh mozzarella cheese, sliced</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="freshbasil" name="freshbasil">
+                            <label for="freshbasil">Fresh basil leaves</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="extravirginoliveoil" name="extravirginoliveoil">
+                            <label for="extravirginoliveoil">Extra-virgin olive oil</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="salt" name="salt">
+                            <label for="salt">Salt</label>
+                        </li>
                     </ul>
                 </div>
                 <button class="toggle-button" onclick="toggleVisibility('instructions-margherita', this)">Hide Instructions</button>
@@ -232,14 +301,38 @@
                 <div id="ingredients-gnocchi" class="content">
                     <h3>Ingredients</h3>
                     <ul class="list-center">
-                        <li>500g potato gnocchi</li>
-                        <li>50g Parmesan cheese, grated</li>
-                        <li>50g Gorgonzola cheese, crumbled</li>
-                        <li>50g Fontina cheese, cubed</li>
-                        <li>50g Mozzarella cheese, shredded</li>
-                        <li>1 cup heavy cream</li>
-                        <li>2 tbsp unsalted butter</li>
-                        <li>Salt and pepper to taste</li>
+                        <li>
+                            <input type="checkbox" id="potatognocchi" name="potatognocchi">
+                            <label for="potatognocchi">500g potato gnocchi</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="parmesan-cheese" name="parmesan-cheese">
+                            <label for="parmesan-cheese">50g Parmesan cheese, grated</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="gorgonzola" name="gorgonzola">
+                            <label for="gorgonzola">50g Gorgonzola cheese, crumbled</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="fontina" name="fontina">
+                            <label for="fontina">50g Fontina cheese, cubed</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="mozz" name="mozz">
+                            <label for="mozz">50g Mozzarella cheese, shredded</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="heavycream" name="heavycream">
+                            <label for="heavycream">1 cup heavy cream</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="unsalted-butter" name="unsalted-butter">
+                            <label for="unsalted-butter">2 tbsp unsalted butter</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="salt-and-pep-taste" name="salt-and-pep-taste">
+                            <label for="salt-and-pep-taste">Salt and pepper to taste</label>
+                        </li>
                     </ul>
                 </div>
             
