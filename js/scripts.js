@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     AOS.init({
         duration: 1000, // Animation duration
         easing: 'ease-in-out', // Animation easing
@@ -21,15 +21,27 @@ function toggleVisibility(elementId, button) {
 
 
 // Saving the checked state to local storage
-document.querySelectorAll('.list-center input[type="checkbox"]').forEach(function(checkbox) {
-    checkbox.addEventListener('change', function() {
-      localStorage.setItem(this.id, this.checked);
+document.querySelectorAll('.list-center input[type="checkbox"]').forEach(function (checkbox) {
+    checkbox.addEventListener('change', function () {
+        localStorage.setItem(this.id, this.checked);
     });
-  });
-  
-  // Loading the saved checked states when the page loads
-  document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.list-center input[type="checkbox"]').forEach(function(checkbox) {
-      checkbox.checked = localStorage.getItem(checkbox.id) === 'true';
+});
+
+// Loading the saved checked states when the page loads
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.list-center input[type="checkbox"]').forEach(function (checkbox) {
+        checkbox.checked = localStorage.getItem(checkbox.id) === 'true';
     });
-  });
+});
+
+
+document.querySelectorAll('.star').forEach(function (star) {
+    star.addEventListener('click', function () {
+        // Remove selection from other stars
+        document.querySelectorAll('.star').forEach(function (otherStar) {
+            otherStar.classList.remove('selected');
+        });
+        // Add selection up to the clicked star
+        this.classList.add('selected');
+    });
+});

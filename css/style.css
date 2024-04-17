@@ -1,21 +1,28 @@
 /* General body and paragraph styling for light theme */
-body, p {
+body,
+p {
     font-family: Verdana, Tahoma, sans-serif;
     margin: 10px;
     padding: 10px;
-    background-color: #f0f0f0; /* Light grey background for light theme */
+    background-color: #f0f0f0;
+    /* Light grey background for light theme */
     text-align: center;
-    color: #000000; /* Explicit text color for light theme */
+    color: #000000;
+    /* Explicit text color for light theme */
 }
 
 /* Dark theme styles */
 body.dark-theme {
-    background-color: rgb(175, 150, 150); /* Dark theme background */
-    color: #ffffff; /* General text color for dark theme */
+    background-color: rgb(175, 150, 150);
+    /* Dark theme background */
+    color: #ffffff;
+    /* General text color for dark theme */
 }
 
 body.dark-theme p {
-    background-color: rgb(175, 150, 150);; /* Ensuring paragraph text color changes in dark theme */
+    background-color: rgb(175, 150, 150);
+    ;
+    /* Ensuring paragraph text color changes in dark theme */
 }
 
 .dark-theme nav {
@@ -28,12 +35,15 @@ body.dark-theme p {
 
 /* Navigation styling */
 nav {
-    background-color: #8b1515; /* Dark red background */
-    position: fixed; /* Fixed position */
+    background-color: #8b1515;
+    /* Dark red background */
+    position: fixed;
+    /* Fixed position */
     top: 0;
     left: 0;
-    width: 100%;    /* Full width */
-    z-index: 1000; 
+    width: 100%;
+    /* Full width */
+    z-index: 1000;
 }
 
 nav ul {
@@ -60,12 +70,16 @@ nav ul li a {
 }
 
 /* Active page link styling */
-nav ul li a.active{
-    background-color: #580e0e; /* Slightly darker red */
+nav ul li a.active {
+    background-color: #580e0e;
+    /* Slightly darker red */
     color: #fff;
-    font-weight: bold; /* Making text bold */
-    font-size: 1.2em; /* Slightly larger font size */
-    border-bottom: 2px solid rgba(255, 170, 0, 0.873); /* Adding an orange bottom border for additional emphasis */
+    font-weight: bold;
+    /* Making text bold */
+    font-size: 1.2em;
+    /* Slightly larger font size */
+    border-bottom: 2px solid rgba(255, 170, 0, 0.873);
+    /* Adding an orange bottom border for additional emphasis */
 }
 
 /* Skip to Main Content link styling */
@@ -95,11 +109,12 @@ a[href="#main-content"]:focus {
     align-content: center;
 }
 
-.main-grid > img,video{
+.main-grid>img,
+video {
     padding: 20px;
     width: 100%;
     max-width: 300px;
-    margin:auto;
+    margin: auto;
 }
 
 /* .img1{
@@ -126,40 +141,40 @@ img {
     height: auto;
 }
 
-h1{
+h1 {
     font-size: 169%;
     font-weight: lighter;
     /* padding:40px; */
-    padding-top:80px;
-    padding-bottom:40px;
+    padding-top: 80px;
+    padding-bottom: 40px;
     text-align: center;
 }
 
-h2{
+h2 {
     font-size: 130%;
-    padding-top:20px;
-    padding-bottom:20px;
-    font-weight:bold;
-    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
-h3{
-    text-align:center;
-    font-weight:bold;
-    padding-bottom:5px;
-    padding-top:20px;
+h3 {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 20px;
 }
 
-.main-picture{
-    display:inline-flex;
+.main-picture {
+    display: inline-flex;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     /* position:center; */
     width: 50%;
 }
 
-.list-center li{
+.list-center li {
     text-align: center;
 }
 
@@ -167,35 +182,46 @@ h3{
 /* Reduced motion query for users who prefer less motion */
 @media (prefers-reduced-motion: reduce) {
     .img4 {
-      display: none; /* This will hide the video from the page */
+        display: none;
+        /* This will hide the video from the page */
     }
-  }
+}
 
 
-  /* Tablet view adjustments */
-@media screen and (min-width: 768px){
-    body, p {
-        font-size: 18px; /* Adjust base font size */
+/* Tablet view adjustments */
+@media screen and (min-width: 768px) {
+
+    body,
+    p {
+        font-size: 18px;
+        /* Adjust base font size */
     }
 
     nav ul li {
-        margin-right: 50px; /* Increase spacing between nav links */
+        margin-right: 50px;
+        /* Increase spacing between nav links */
     }
 
     nav ul li a {
-        font-size: 1.4em; /* Increase nav link font size */
+        font-size: 1.4em;
+        /* Increase nav link font size */
     }
 
     .main-grid {
-        grid-template-columns: repeat(auto-fit, minmax(550px, 1fr)); /* Adjust grid for better spacing */
+        grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+        /* Adjust grid for better spacing */
     }
 
-    h1, h2, h3 {
-        font-size: calc(1em + 1vw); /* Responsive font sizes */
+    h1,
+    h2,
+    h3 {
+        font-size: calc(1em + 1vw);
+        /* Responsive font sizes */
     }
 
     .main-picture {
-        width: 80%; /* Adjust main image width for better display */
+        width: 80%;
+        /* Adjust main image width for better display */
     }
 
 
@@ -218,7 +244,8 @@ h3{
         transition: all 0.3s ease-in-out;
     }
 
-    nav ul li a:hover::after, nav ul li a:focus::after {
+    nav ul li a:hover::after,
+    nav ul li a:focus::after {
         visibility: visible;
         width: 100%;
     }
@@ -227,34 +254,46 @@ h3{
 
 /* Desktop view adjustments */
 @media screen and (min-width: 1025px) {
-    body, p {
-        font-size: 30px; /* Slightly larger base font size for desktop */
+
+    body,
+    p {
+        font-size: 30px;
+        /* Slightly larger base font size for desktop */
     }
 
     nav ul li {
-        margin-right: 30px; /* Decreased spacing between links because incerased font size */
+        margin-right: 30px;
+        /* Decreased spacing between links because incerased font size */
     }
 
     nav ul li a {
-        font-size: 1.9em; /* Increase nav link font size for desktop */
+        font-size: 1.9em;
+        /* Increase nav link font size for desktop */
     }
 
     .main-grid {
-        grid-template-columns: repeat(4, 1fr); /* Adjust grid to display 3 items per row */
-        gap: 20px; /* Add some space between grid items */
+        grid-template-columns: repeat(4, 1fr);
+        /* Adjust grid to display 3 items per row */
+        gap: 20px;
+        /* Add some space between grid items */
     }
 
-    h1, h2, h3 {
-        font-size: calc(1.2em + 1vw); /* Adjust font sizes for desktop, making them slightly larger and more responsive */
+    h1,
+    h2,
+    h3 {
+        font-size: calc(1.2em + 1vw);
+        /* Adjust font sizes for desktop, making them slightly larger and more responsive */
     }
 
     .main-picture {
-        width: 80%; /* Adjust the width of the main picture for a better desktop presentation */
+        width: 80%;
+        /* Adjust the width of the main picture for a better desktop presentation */
     }
 
     /* Optionally, you might want to adjust other elements specifically for desktop,
        such as increasing padding/margins for larger screens, or modifying header/footer layouts. */
 }
+
 /* 
 [data-aos="fade-up"] {
     transition: ease-in-out 0.3s;
@@ -290,7 +329,7 @@ nav[data-aos="fade-up"].aos-animate {
     margin-top: 10px;
     padding: 10px;
     background-color: #fff;
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
 }
 
 
@@ -305,21 +344,25 @@ nav[data-aos="fade-up"].aos-animate {
 .content {
     margin-top: 10px;
     padding: 10px;
-    background-color: #fff;
-    border: 1px solid #eee;
+    /* background-color: #fff; */
+    background-color: rgb(0, 0, 0, 0);
+    /* border: 1px solid #eee; */
 }
 
 .map-instructions {
     text-align: center;
     font-size: 1.2em;
-    margin-top: 60px; /* Adjust this value to fit under your navbar */
-    color: #333; /* Or any color that fits your design */
+    margin-top: 60px;
+    /* Adjust this value to fit under your navbar */
+    color: #333;
+    /* Or any color that fits your design */
 }
 
 #map {
     height: 400px;
     width: 100%;
-    margin-top: 20px; /* Additional margin to push the map down */
+    margin-top: 20px;
+    /* Additional margin to push the map down */
 }
 
 
@@ -328,11 +371,43 @@ input[type="checkbox"] {
     /* Example: increase size of checkbox */
     transform: scale(1.2);
     margin-right: 5px;
-  }
-  
-  /* Styling for list item when the ingredient is checked */
-  input[type="checkbox"]:checked + label {
+}
+
+/* Styling for list item when the ingredient is checked */
+input[type="checkbox"]:checked+label {
     text-decoration: line-through;
-    color: #6c757d; /* Example: grey out the text */
-  }
-  
+    color: #6c757d;
+    /* Example: grey out the text */
+}
+
+.rating {
+    text-align: center;
+    direction: ltr; /* Ensure left-to-right flow */
+}
+
+.star {
+    font-size: 2em;
+    color: grey;
+    cursor: pointer;
+    display: inline-block;
+    position: relative; /* Ensures positioning is relative to container */
+}
+
+.star:hover,
+.star:hover ~ .star,
+.star.selected ~ .star {
+    color: gold; /* This line is usually not needed for left-to-right */
+}
+
+/* This selector ensures only stars up to and including the hovered or selected star are highlighted. */
+.star:hover ~ .star,
+.star.selected ~ .star {
+    color: initial;
+}
+
+.star:hover,
+.star.selected,
+.star:hover ~ .star,
+.star.selected ~ .star {
+    color: gold;
+}
